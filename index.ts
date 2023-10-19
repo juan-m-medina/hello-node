@@ -1,5 +1,11 @@
-function HelloNode(): void {
-  console.log("Hello Node");
-}
+import express from "express";
+import homeRoutes from "./routes/home.routes";
 
-HelloNode();
+const app = express();
+
+app.use("/", homeRoutes);
+
+app.listen(3000, () => {
+  console.log('Server is running on port 3000');
+})
+
