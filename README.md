@@ -36,7 +36,7 @@ docker run --rm hello-node
     ```
 - Run a test
     ```shell
-    curl --request GET --url http://localhost:300
+    curl --request GET --url http://localhost:3000
     ```
     alternatively, you can also try a bigger check using `apache benchmark`:
     ```shell
